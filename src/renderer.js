@@ -19,12 +19,12 @@ import {
 const unicodeEmojiRegex = emojiRegex();
 
 // using em's we can ensure size matches surrounding font
-const style = {
-  width: "1em",
-  height: "1em",
-  margin: "0 .05em 0 .1em",
-  verticalAlign: "-0.1em",
-};
+// const style = {
+//   width: "1em",
+//   height: "1em",
+//   margin: "0 .05em 0 .1em",
+//   verticalAlign: "-0.1em",
+// };
 
 const asciiToAlias = { ":": ":" };
 
@@ -62,7 +62,6 @@ export function toArray(text, options = {}) {
         key={i}
         alt={match}
         src={src}
-        style={style}
         className={options.className}
         {...options.props}
       />
